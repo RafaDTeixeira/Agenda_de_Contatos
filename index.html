@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agenda de contatos</title>
+    <style>
+        
+        body{
+            padding-top: 100px;
+        }
+
+        .container{
+            display: flex;
+            max-width: 960px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        form input{
+            font-size: 16px;
+            background-color: white;
+            border: none;
+            border-bottom: 2px solid gold;
+            padding: 15px 20px;
+            margin-left: 10px;
+        }
+
+        form button{
+            padding: 18px;
+            background-color: gold;
+            color: black;
+            border: none;
+            margin: 10px;
+            border-radius: 5px;
+            width: 150px;
+            max-width: 100%;
+            cursor: pointer;
+        }
+
+        table{
+            width: 100%;
+        }
+        
+        table th{
+            border-bottom: 2px solid gold;
+            padding: 16px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        table td{
+            padding: 16px 0;
+            text-align: center;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(164, 111, 12, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="agenda">
+            <input type="text" placeholder="Nome do Contato" id="nome-contato" required>
+            <input type="number" placeholder="Telefone do contato" id="numero-contato" required>
+            <button type="submit">Adcionar contato</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Número do Contato</th>                 
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="nome">---</td>
+                    <td id="numero">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
